@@ -4,55 +4,177 @@
 	<meta charset='UTF-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 
-	<title>HTTP shit reference</title>
-	<meta name='description' content='A reference to the HTTP status code shit so you can remember'>
+	<title>HTTP reference</title>
+	<meta name='description' content='A reference to the HTTP status codes so you can remember'>
 	<meta name='author' content='Siddharth Shyniben'>
 
-	<meta property='og:title' content='HTTP shit reference'>
+	<meta property='og:title' content='HTTP reference'>
 	<meta property='og:type' content='website'>
 	<meta property='og:url' content='http.siddu.tech'>
-	<meta property='og:description' content='A reference to the HTTP status code shit so you can remember'>
+	<meta property='og:description' content='A reference to the HTTP status codes so you can remember'>
 
 	<!-- TODO image -->
 	<!-- TODO favicon -->
 	<!-- TODO analytics?? -->
 
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/water.css@2/out/water.css'>
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/checka11y-css/checka11y.css" /> -->
 </head>
 <body>
-	<h1>HTTP shit</h1>
+	<h1>HTTP status codes</h1>
 
-	<p>Keep forgetting the HTTP shit? This is a reference to it!</p>
+	<p>Keep forgetting the HTTP status codes? This is a reference to it!</p>
 	<blockquote>Note: all the cursing is just for fun. Enjoy :)</blockquote>
 
-	<h2>1xx: Wait for your shit</h2>
+	<h2><code>1xx</code>: Wait for your shit</h2>
 
 	<table>
-		<tr>
-			<th>Code</th>
-			<th>Description</th>
-			<th>RFC</th>
-		</tr>
-		<tr>
-			<td>100 Continue</td>
-			<td>I'm waiting for your shit, get on with it.</td>
-			<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
-		</tr>
-		<tr>
-			<td>101 Switching Protocols</td>
-			<td>This ear's shitty, talk to my good ear.</td>
-			<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
-		</tr>
-		<tr>
-			<td>102 Processing</td>
-			<td>Piss off, I'm thinking.</td>
-			<td><a href='https://tools.ietf.org/html/rfc2518'>RFC 2518</a></td>
-		</tr>
-		<tr>
-			<td>103 Early Hints</td>
-			<td>Here's the first bit of the answer, it might help you get shit done.</td>
-			<td><a href='https://tools.ietf.org/html/rfc8297'>RFC 8297</a></td>
-		</tr>
+		<thead>
+			<tr>
+				<th>Code</th>
+				<th>Description</th>
+				<th>RFC</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><code>100</code> Continue</td>
+				<td>I'm waiting for your shit, get on with it.</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>101</code> Switching Protocols</td>
+				<td>This ear's shitty, talk to my good ear.</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>102</code> Processing</td>
+				<td>Shut up, I'm thinking</td>
+				<td><a href='https://tools.ietf.org/html/rfc2518'>RFC 2518</a></td>
+			</tr>
+			<tr>
+				<td><code>103</code> Early Hints</td>
+				<td>Here's some of your shit, it might help you get shit done</td>
+				<td><a href='https://tools.ietf.org/html/rfc8297'>RFC 8297</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2><code>2xx</code>: Here's your shit</h2>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Code</th>
+				<th>Description</th>
+				<th>RFC</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><code>200</code> OK</td>
+				<td>Shit was successful!</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>201</code> Created</td>
+				<td>Look ma, I made a thing!</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>202</code> Accepted</td>
+				<td>Got it, thanks!</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>203</code> Non-Authoritative Information</td>
+				<td>A friend of a friend told me...</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>204</code> No Content</td>
+				<td>I may or may not have something to say, but I'm not gonna say it.</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>205</code> Reset Content</td>
+				<td>I did your shit, and I'll do it again</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>206</code> Partial Content</td>
+				<td>I have more shit to say than you can chew</td>
+				<td><a href='https://tools.ietf.org/html/rfc7233'>RFC 7233</a></td>
+			</tr>
+			<tr>
+				<td><code>207</code> Multi-Status</td>
+				<td>Here's all the shit you asked for</td>
+				<td><a href='https://tools.ietf.org/html/rfc4918'>RFC 4918</a></td>
+			</tr>
+			<tr>
+				<td><code>208</code> Already Reported</td>
+				<td>I told you this shit before</td>
+				<td><a href='https://tools.ietf.org/html/rfc5842'>RFC 5842</a></td>
+			</tr>
+			<tr>
+				<td><code>226</code> IM Used</td>
+				<td>This shit's changed, you should know that other shit</td>
+				<td><a href='https://tools.ietf.org/html/rfc3229'>RFC 3229</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2><code>3xx</code>: Your shit's over here</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Code</th>
+				<th>Description</th>
+				<th>RFC</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><code>300</code> Multiple Choices</td>
+				<td>Pick the correct shit</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>301</code> Moved Permanently</td>
+				<td>This shit now lives at the next block</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>302</code> Found</td>
+				<td>I found the shit, but it's not here</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>303</code> See other</td>
+				<td>Here's your shit, now check out this other shit</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>304</code> Not modified</td>
+				<td>It's the same shit I gave you last time</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>305</code> Use Proxy</td>
+				<td>This ear's shitty, speak to my good ear</td>
+				<td><a href='https://tools.ietf.org/html/rfc7231'>RFC 7231</a></td>
+			</tr>
+			<tr>
+				<td><code>307</code> Partial Content</td>
+				<td>We're out, use that shit</td>
+				<td><a href='https://tools.ietf.org/html/rfc7233'>RFC 7233</a></td>
+			</tr>
+			<tr>
+				<td><code>308</code> Permanent Redirect</td>
+				<td>Shit's over there</td>
+				<td><a href='https://tools.ietf.org/html/rfc4918'>RFC 4918</a></td>
+			</tr>
+		</tbody>
 	</table>
 </body>
 </html>
